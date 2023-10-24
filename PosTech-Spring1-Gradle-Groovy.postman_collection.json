@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "558f2a58-b624-4c4e-b7fc-a611c4f924fa",
+		"name": "PosTech-Spring1-Gradle-Groovy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12698051"
+	},
+	"item": [
+		{
+			"name": "findAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Path}}/usuarios/listar",
+					"host": [
+						"{{Path}}"
+					],
+					"path": [
+						"usuarios",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Path}}/usuarios/get/1",
+					"host": [
+						"{{Path}}"
+					],
+					"path": [
+						"usuarios",
+						"get",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Gabriel 2\",\r\n    \"email\": \"g@gmail.com\",\r\n    \"cpf\": \"12312312311\",\r\n    \"dataNascimento\": \"2001-12-07\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Path}}/usuarios/cadastro",
+					"host": [
+						"{{Path}}"
+					],
+					"path": [
+						"usuarios",
+						"cadastro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Gabriel atualizado\",\r\n    \"email\": \"g@gmail.com\",\r\n    \"cpf\": \"12312312311\",\r\n    \"dataNascimento\": \"2001-12-07\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Path}}/usuarios/atualiza/2",
+					"host": [
+						"{{Path}}"
+					],
+					"path": [
+						"usuarios",
+						"atualiza",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Bolinha para pet Atualizadooooo\",\r\n    \"descricao\": \"Bolinha colorida\",\r\n    \"preco\": 20.0,\r\n    \"urlDaImagem\": \"dsifhdudf.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Path}}/usuarios/delete/2",
+					"host": [
+						"{{Path}}"
+					],
+					"path": [
+						"usuarios",
+						"delete",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "Path",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}
