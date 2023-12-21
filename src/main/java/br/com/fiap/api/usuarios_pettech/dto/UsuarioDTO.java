@@ -1,11 +1,13 @@
 package br.com.fiap.api.usuarios_pettech.dto;
 
+import br.com.fiap.api.usuarios_pettech.anotacao.CriacaoUsuarioValid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import org.hibernate.validator.constraints.br.CPF;
 
 import java.time.LocalDate;
 
+@CriacaoUsuarioValid(message = "Deu erro")
 public record UsuarioDTO(
         Long id,
         //anotação que não permite null, vazio ou espaço vazio
