@@ -21,3 +21,5 @@
 -Adicionando dependência do bean Validation (biblioteca de validação de formulários)<br>
 -Usando o NotBlank do BeanValidation (colocamos no atributo de entrada - no caso nosso DTO- e o @Valid na controller)<br>
 -Fazendo um tratamento de erro para MethodArgumentNotValidException (caso o campo seja reprovado pelo bean)
+<br><br>
+Link swagger: http://localhost:8080/swagger-ui/index.html
